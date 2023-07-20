@@ -1,0 +1,292 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* changint default setting to initial stage and fount family */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* color system
+  main color : #087f5b
+  Grey coge :#343a40
+
+*/
+body{
+  font-family: 'Inter',sans-serif;
+  /* background-color: antiquewhite; */
+  color:#343a40;
+}
+
+/* head section*/
+
+article{
+  margin-top:100px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head-section{
+  display: flex;
+  gap:80px;
+  margin-bottom: 120px;
+}
+
+.about{
+  margin-top: 30px;
+
+}
+
+h1{
+  font-size: 44px;
+  margin-bottom: 20px;
+  line-height:1.1;
+  letter-spacing:1px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  
+}
+
+/* about-section*/
+
+.grid-3-col{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.first-col{
+  justify-self: center;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.second-col{
+  justify-self: center;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.third-col{
+  justify-self: center;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.img-customer{
+  justify-self: start;
+  align-self:center;
+}
+
+.importance-of-chairs{
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/-1;
+}
+
+.importance-of-chairs p:nth-child(2){
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.importance-of-chairs p:nth-child(3){
+  color:white;
+}
+
+h3{
+  margin-bottom: 20px;
+}
+
+h4{
+  margin-bottom: 20px;
+  font-size: 27px;
+  letter-spacing: -0.5px;
+}
+
+.about-section{
+  margin-bottom: 50px;
+}
+
+.products{
+  margin-bottom: 40px;
+}
+
+.products h2:first-child{
+  margin-bottom: 80px;
+}
+
+.product-list{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:100px;
+}
+
+.second-product{
+  width:300px;
+}
+
+ul{
+  list-style: none;
+ 
+}
+
+.details h2{
+  font-size: 25px;
+}
+
+.details{
+  padding: 25px;
+}
+
+.details h2:first-child{
+  margin-bottom: 20px;
+}
+
+li{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-col p{
+  font-size: 18px;
+  
+}
+
+.second-col p{
+  font-size: 18px;
+  
+}
+
+.third-col p{
+  font-size: 18px;
+ 
+}
+
+a{
+  font-size: 18px;
+  color: blue;
+}
+
+a:active{
+  color: red;
+}
+
+.about a{
+  color:white;
+  background-color: #087f5b;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 32px;
+}
+
+.about a:hover,
+.about a:active{
+  background-color: #099268;
+}
+
+footer{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h2{
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  margin-bottom: 60px;
+}
+
+.features-title{
+  font-size: 20px;
+}
+
+.features-text{
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.price a{
+  margin-top: 20px;
+  color:white;
+  background-color: #087f5b;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.price a:hover{
+  background-color: #099268;
+}
+
+.test{
+  display: flex;
+  gap:42px;
+  background-color: #087f5b;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 80px;
+}
+
+.feature-icon{
+  color: #087f5b;
+  width: 32px;
+  height:32px;
+  margin-bottom: 16px;
+}
+
+.chair-icon{
+  color: #087f5b;
+  width: 24px;
+  height: 20px;
+}
+
+.first-product{
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.second-product{
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.third-product{
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-customer img{
+  border-radius: 12px;
+}
+
+.product-list img{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.img-hero img{
+  border-radius: 12px;
+}
